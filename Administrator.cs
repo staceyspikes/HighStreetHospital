@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HighStreetHospital
 {
-    class Administrator : EmployeeBase 
+    class Administrator : EmployeeBase
     {
         private string department;
 
@@ -20,6 +20,12 @@ namespace HighStreetHospital
             this.employeeName = employeeName;
             this.employeeNumber = employeeNumber;
             this.department = department;
+        }
+        public override void displayInformation()
+        {
+            Console.Write(employeeName + "\t");
+            Console.Write(employeeNumber + "\t");
+            Console.Write(department + "\n");
         }
     }
 }

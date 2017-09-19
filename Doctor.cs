@@ -12,7 +12,7 @@ namespace HighStreetHospital
 
         public string SpecialtyArea
             {
-            get { return this.specialtyArea; }
+               get { return this.specialtyArea; }
             }
 
         public Doctor(string employeeName, int employeeNumber, string specialtyArea)
@@ -21,7 +21,13 @@ namespace HighStreetHospital
             this.employeeNumber = employeeNumber;
             this.specialtyArea = specialtyArea;
         }
-
+        
+        public override void displayInformation()
+        {
+            Console.Write(employeeName + "\t");
+            Console.Write(employeeNumber + "\t");
+            Console.Write(specialtyArea + "\n");
+        }
 
     }
 }

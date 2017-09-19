@@ -22,5 +22,12 @@ namespace HighStreetHospital
 
 
         }
+        public override void displayInformation()
+        {
+            Console.Write(employeeName + "\t");
+            Console.Write(employeeNumber + "\t");
+            Console.Write(numberOfPatients + "\n");
+            
+        }
     }
 }

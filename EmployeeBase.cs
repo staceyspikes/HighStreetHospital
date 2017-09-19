@@ -10,6 +10,8 @@ namespace HighStreetHospital
     {
         protected string employeeName;
         protected int employeeNumber;
+        
+
 
 
         public string EmployeeName
@@ -20,6 +22,8 @@ namespace HighStreetHospital
         {
             get { return this.employeeNumber; }
         }
+        
+        
 
         public EmployeeBase()
         {
@@ -29,6 +33,17 @@ namespace HighStreetHospital
         {
             this.employeeName = employeeName;
             this.employeeNumber = employeeNumber;
+            
         }
+
+        public virtual void displayInformation()
+        {
+            
+        }
+        public virtual void displayWorking()
+        {
+
+        }
+        
     }   
 }
